@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+  <title> HEllo world TTSt</title>
+
+  <script type="text/javascript">
+    function parla1()
+    {
+    var msg = new SpeechSynthesisUtterance('Hello world');
+    window.speechSynthesis.speak(msg);
+    }
+
+    function parla_da_ID()
+    {
+    alert ( testo=document.getElementById('Topolino').value  ) ;
+    var msg = new SpeechSynthesisUtterance(  document.getElementById('Topolino').value  );
+    a = window.speechSynthesis.speak( msg );
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+    <h2> TTS parla </h2>
+    <input value="Ciao Paolo come stai?" id="Topolino">
+    <button type="button" onclick="parla1() " name ="parla1" >
+    <button type="button" onclick="parla_da_ID()" value="PAOLO" >
+
+</body>
+</html>
